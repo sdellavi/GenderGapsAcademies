@@ -26,10 +26,10 @@ foreach field in psych econ math {
 	noisily display "Generating estimates for `field'..." _n
 
 	if "`field'" == "psych" {
-		use "${root}\psych\output\fellows_matched_rectangular_citation.dta", clear
+		use "${root}/psych/output/fellows_matched_rectangular_citation.dta", clear
 	}
 	else if "`field'" == "math" {	
-		use "${root}\math\output\fellows_matched_rectangular_citation.dta", clear
+		use "${root}/math/output/fellows_matched_rectangular_citation.dta", clear
 	}	
 	else if "`field'" == "econ" {
 		use "${root}/econ/output/regression_dataset_NAS_AAAS.dta", clear

@@ -25,10 +25,10 @@ foreach field in psych math {
 		save "``award''"
 	}
 	if "`field'" == "psych" {
-		use "${root}\psych\output\fellows_matched_rectangular_citation.dta", clear
+		use "${root}/psych/output/fellows_matched_rectangular_citation.dta", clear
 	}
 	else if "`field'" == "math" {
-		use "${root}\math\output\fellows_matched_rectangular_citation.dta", clear
+		use "${root}/math/output/fellows_matched_rectangular_citation.dta", clear
 	}
 	drop if years_lastpub > 18 
 	* merge back flags

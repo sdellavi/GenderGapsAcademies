@@ -2,9 +2,9 @@
 
 cd "..."
 
-use "data\AAAS.dta", clear
+use "data/AAAS.dta", clear
 
-drop if primary == ""
+drop if subfield == ""
 
 gen pre_1990 = year < 1990
 gen female_pre_1990 = Female * (pre_1990)
@@ -30,7 +30,7 @@ order subfield fellow_total share_fem_total fellow_pre_1990 share_fem_pre_1990 f
 
 ************************************************************************************
 
-use "data\NAS.dta", clear
+use "data/NAS.dta", clear
 
 drop if primary == ""
 
@@ -62,7 +62,7 @@ drop if primary == "Park" | primary == "les" | primary == "ent, and Security,Pri
 
 
 ************************************************************************************
-use "data\NAS.dta", clear
+use "data/NAS.dta", clear
 
 drop if primary == ""
 drop if primary == "Park" | primary == "les" | primary == "ent, and Security,Primary: Human Environmental Sciences" | primary == "lis" | primary == "o"
@@ -106,7 +106,7 @@ save "data/NAS_totals_comp.dta", replace
 
 
 *** AAAS / NAS combined
-use "data\AAAS.dta", clear
+use "data/AAAS.dta", clear
 
 drop if subfield == ""
 

@@ -17,10 +17,10 @@ global econ_journals AER ECTA JE JET JPE QJE REStud RAND JEP JEL REStat JF JME J
 
 foreach field in econ psych math {
 	if "`field'" == "psych" {
-		use "${root}\psych\output\fellows_matched_rectangular_citation.dta", clear
+		use "${root}/psych/output/fellows_matched_rectangular_citation.dta", clear
 	}
 	else if "`field'" == "math" {	
-		use "${root}\math\output\fellows_matched_rectangular_citation.dta", clear
+		use "${root}/math/output/fellows_matched_rectangular_citation.dta", clear
 	}
 	else if "`field'" == "econ" {
 		use "${root}/econ/output/regression_dataset_NAS_AAAS.dta", clear
@@ -389,10 +389,10 @@ foreach field in econ psych math {
 foreach award in AAAS NAS {
 	foreach field in econ psych math {
 		if "`field'" == "psych" {
-			use author using "${root}\psych\output\fellows_matched_rectangular_citation.dta", clear
+			use author using "${root}/psych/output/fellows_matched_rectangular_citation.dta", clear
 		}
 		else if "`field'" == "math" {	
-			use author using "${root}\math\output\fellows_matched_rectangular_citation.dta", clear
+			use author using "${root}/math/output/fellows_matched_rectangular_citation.dta", clear
 		}
 		
 		else if "`field'" == "econ" {

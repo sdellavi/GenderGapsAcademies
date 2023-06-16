@@ -15,10 +15,10 @@ global econ_journals AER ECTA JE JET JPE QJE REStud RAND JEP JEL REStat JF JME J
 
 foreach field in psych econ math  {
 	if "`field'" == "psych" {
-		use "${root}\psych\output\fellows_matched_rectangular_citation.dta", clear
+		use "${root}/psych/output/fellows_matched_rectangular_citation.dta", clear
 	}
 	else if "`field'" == "math" {	
-		use "${root}\math\output\fellows_matched_rectangular_citation.dta", clear
+		use "${root}/math/output/fellows_matched_rectangular_citation.dta", clear
 	}
 	
 	else if "`field'" == "econ" {
