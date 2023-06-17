@@ -26,7 +26,7 @@ gen share_fem_total = female_total / (fellow_total - ambiguous_total)
 keep subfield fellow_* share_fem_*
 order subfield fellow_total share_fem_total fellow_pre_1990 share_fem_pre_1990 fellow_post_1990 share_fem_post_1990
 
-*export excel "AAAS_field_share.xlsx", sheetreplace firstrow(variables) 
+export excel "AAAS_field_share.xlsx", sheetreplace firstrow(variables) 
 
 ************************************************************************************
 
@@ -57,7 +57,7 @@ order primary fellow_total share_fem_total fellow_pre_1990 share_fem_pre_1990 fe
 drop if primary == "Park" | primary == "les" | primary == "ent, and Security,Primary: Human Environmental Sciences" | primary == "lis" | primary == "o"
 
 
-*export excel "tables/NAS_field_share.xlsx", sheetreplace firstrow(variables)
+export excel "tables/NAS_field_share.xlsx", sheetreplace firstrow(variables)
 
 
 
